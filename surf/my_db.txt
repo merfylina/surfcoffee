@@ -1,0 +1,37 @@
+    -- Создание таблицы 'users'
+    CREATE TABLE users (
+        user_id INT PRIMARY KEY,
+        username VARCHAR(255),
+        first_name VARCHAR(255),
+        role VARCHAR(50)
+    );
+
+-- Создание таблицы 'Dop_info'
+CREATE TABLE dop_info (
+    user_id INT,
+    email VARCHAR(255),
+    phone VARCHAR(255),
+    address VARCHAR(255),
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+
+-- Создание таблицы 'order_product'
+CREATE TABLE order_product (
+    user_id INT,
+    id_product VARCHAR(255),
+    data_order DATE,
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+
+`-- Создание таблицы 'product'
+CREATE TABLE product (
+    id_product VARCHAR(255) PRIMARY KEY,
+    count INT
+);`
+
+-- Создание таблицы 'admin_serf'
+CREATE TABLE admin_serf (
+    admin_id SERIAL PRIMARY KEY,
+    user_name VARCHAR(255),
+    password VARCHAR(255)
+);

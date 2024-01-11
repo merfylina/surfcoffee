@@ -1,0 +1,176 @@
+
+
+Wed Jan  3 17:46:05 2024
+<<ERROR polling>>
+Авторизация через логин/пароль или токен, выберите что-то одно
+Traceback (most recent call last):
+  File "c:\Users\zahar\Desktop\surf\main.py", line 251, in start_bot
+    bot.polling(none_stop=True, interval=0)
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\zahar\Desktop\surf\main.py", line 195, in pay_order
+    client = Client('TOKEN')
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\sber_payments\client.py", line 36, in __init__
+    raise BadCredentialsException('Авторизация через логин/пароль или токен, выберите что-то одно')
+sber_payments.exceptions.BadCredentialsException: Авторизация через логин/пароль или токен, выберите что-то одно
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\zahar\Desktop\surf\main.py", line 251, in start_bot
+    bot.polling(none_stop=True, interval=0)
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\zahar\Desktop\surf\main.py", line 195, in pay_order
+    client = Client('TOKEN')
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\sber_payments\client.py", line 36, in __init__
+    raise BadCredentialsException('Авторизация через логин/пароль или токен, выберите что-то одно')
+sber_payments.exceptions.BadCredentialsException: Авторизация через логин/пароль или токен, выберите что-то одно
+
+<<ERROR polling>>
+
+Wed Jan  3 18:01:21 2024
+<<ERROR polling>>
+TeleBot.send_invoice() missing 1 required positional argument: 'prices'
+Traceback (most recent call last):
+  File "C:\Users\zahar\Desktop\surf\main.py", line 262, in start_bot
+    bot.polling(none_stop=True, interval=0)
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zahar\Desktop\surf\main.py", line 197, in pay_order
+    bot.send_invoice(
+TypeError: TeleBot.send_invoice() missing 1 required positional argument: 'prices'
+
+<<ERROR polling>>
+
+Wed Jan  3 18:02:22 2024
+<<ERROR polling>>
+TeleBot.send_invoice() missing 1 required positional argument: 'prices'
+Traceback (most recent call last):
+  File "C:\Users\zahar\Desktop\surf\main.py", line 262, in start_bot
+    bot.polling(none_stop=True, interval=0)
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zahar\Desktop\surf\main.py", line 197, in pay_order
+    bot.send_invoice(
+TypeError: TeleBot.send_invoice() missing 1 required positional argument: 'prices'
+
+<<ERROR polling>>
+
+Wed Jan  3 18:09:07 2024
+<<ERROR polling>>
+TeleBot.send_invoice() missing 1 required positional argument: 'prices'
+Traceback (most recent call last):
+  File "C:\Users\zahar\Desktop\surf\main.py", line 262, in start_bot
+    bot.polling(none_stop=True, interval=0)
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zahar\Desktop\surf\main.py", line 197, in pay_order
+    bot.send_invoice(
+TypeError: TeleBot.send_invoice() missing 1 required positional argument: 'prices'
+
+<<ERROR polling>>
+
+Wed Jan  3 18:09:22 2024
+<<ERROR polling>>
+TeleBot.send_invoice() missing 1 required positional argument: 'prices'
+Traceback (most recent call last):
+  File "C:\Users\zahar\Desktop\surf\main.py", line 262, in start_bot
+    bot.polling(none_stop=True, interval=0)
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zahar\Desktop\surf\main.py", line 197, in pay_order
+    bot.send_invoice(
+TypeError: TeleBot.send_invoice() missing 1 required positional argument: 'prices'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\zahar\Desktop\surf\main.py", line 262, in start_bot
+    bot.polling(none_stop=True, interval=0)
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\zahar\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zahar\Desktop\surf\main.py", line 197, in pay_order
+    bot.send_invoice(
+TypeError: TeleBot.send_invoice() missing 1 required positional argument: 'prices'
+
+<<ERROR polling>>
